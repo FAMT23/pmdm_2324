@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".f_calculaTron">
+
+    <Button
+        android:id="@+id/u1e3btDos"
+        android:layout_width="136dp"
+        android:layout_height="56dp"
+        android:text="2"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/u1e3btCinco"
+        android:layout_width="136dp"
+        android:layout_height="56dp"
+        android:text="5"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="@+id/u1e3btDos"
+        app:layout_constraintStart_toStartOf="@+id/u1e3btDos"
+        app:layout_constraintTop_toBottomOf="@+id/u1e3btDos"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/u1e3btCero"
+        android:layout_width="136dp"
+        android:layout_height="56dp"
+        android:text="0"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="@+id/u1e3btOcho"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/u1e3btOcho"
+        app:layout_constraintTop_toBottomOf="@+id/u1e3btOcho"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/u1e3btUno"
+        android:layout_width="136dp"
+        android:layout_height="56dp"
+        android:text="1"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/u1e3btDos"
+        app:layout_constraintEnd_toStartOf="@+id/u1e3btDos"
+        app:layout_constraintTop_toTopOf="@+id/u1e3btDos"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/u1e3btTres"
+        android:layout_width="136dp"
+        android:layout_height="56dp"
+        android:text="3"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/u1e3btDos"
+        app:layout_constraintStart_toEndOf="@+id/u1e3btDos"
+        app:layout_constraintTop_toTopOf="@+id/u1e3btDos"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/u1e3btCuatro"
+        android:layout_width="136dp"
+        android:layout_height="56dp"
+        android:text="4"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/u1e3btCinco"
+        app:layout_constraintEnd_toStartOf="@+id/u1e3btCinco"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/u1e3btSeis"
+        android:layout_width="136dp"
+        android:layout_height="56dp"
+        android:text="6"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/u1e3btCinco"
+        app:layout_constraintStart_toEndOf="@+id/u1e3btCinco"
+        app:layout_constraintTop_toBottomOf="@+id/u1e3btDos"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/u1e3btSiete"
+        android:layout_width="136dp"
+        android:layout_height="56dp"
+        android:text="7"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/u1e3btCero"
+        app:layout_constraintEnd_toStartOf="@+id/u1e3btOcho"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/u1e3btNueve"
+        android:layout_width="136dp"
+        android:layout_height="56dp"
+        android:text="9"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/u1e3btCero"
+        app:layout_constraintStart_toEndOf="@+id/u1e3btOcho"
+        app:layout_constraintTop_toBottomOf="@+id/u1e3btCinco"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/u1e3btDel"
+        android:layout_width="136dp"
+        android:layout_height="56dp"
+        android:text="Del"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/u1e3btCero"
+        app:layout_constraintEnd_toStartOf="@+id/u1e3btCero"
+        app:layout_constraintTop_toTopOf="@+id/u1e3btCero"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/u1e3btClear"
+        android:layout_width="136dp"
+        android:layout_height="56dp"
+        android:text="C"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/u1e3btCero"
+        app:layout_constraintStart_toEndOf="@+id/u1e3btCero"
+        app:layout_constraintTop_toTopOf="@+id/u1e3btCero"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/u1e3btOcho"
+        android:layout_width="136dp"
+        android:layout_height="56dp"
+        android:text="8"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="@+id/u1e3btCinco"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/u1e3btCinco"
+        app:layout_constraintTop_toBottomOf="@+id/u1e3btCinco"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/u1e3tvOutput"
+        android:layout_width="411dp"
+        android:layout_height="56dp"
+        android:text="TextView"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/u1e3btDos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioButton
+        android:id="@+id/u1e3rbtBueno"
+        android:layout_width="111dp"
+        android:layout_height="39dp"
+        android:text="Bueno"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u1e3btCero"
+        app:layout_constraintVertical_bias="0.315"
+        tools:ignore="MissingConstraints" />
+
+    <RadioButton
+        android:id="@+id/u1e3rbtMalo"
+        android:layout_width="113dp"
+        android:layout_height="40dp"
+        android:text="Malo"
+        app:layout_constraintBottom_toBottomOf="@+id/u1e3rbtBueno"
+        app:layout_constraintEnd_toStartOf="@+id/u1e3rbtBueno"
+        app:layout_constraintTop_toTopOf="@+id/u1e3rbtBueno"
+        tools:ignore="MissingConstraints" />
+
+    <RadioButton
+        android:id="@+id/u1e3rbtExcelente"
+        android:layout_width="108dp"
+        android:layout_height="39dp"
+        android:text="Excelente"
+        app:layout_constraintBottom_toBottomOf="@+id/u1e3rbtBueno"
+        app:layout_constraintStart_toEndOf="@+id/u1e3rbtBueno"
+        app:layout_constraintTop_toTopOf="@+id/u1e3rbtBueno"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="97dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_today" />
+
+    <TextView
+        android:id="@+id/u1e3tvPropina"
+        android:layout_width="249dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="36dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

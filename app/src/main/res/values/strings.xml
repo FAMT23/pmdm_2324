@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">e_colorTron</string>
+    <string name="_8">8</string>
+    <string name="generar">Generar</string>
+    <string name="blanco">Blanco</string>
+    <string name="textview">TextView</string>
+    <string name="name">Name</string>
+</resources>
