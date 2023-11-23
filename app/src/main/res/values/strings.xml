@@ -5,4 +5,13 @@
     <string name="blanco">Blanco</string>
     <string name="textview">TextView</string>
     <string name="name">Name</string>
+
+    <string-array name="spinner_tipoHelado">
+        <item id="\/">Cucurucho</item>
+        <item id="\/">Cucuchoco</item>
+        <item id="U">Tarrina</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_ut04a1_colores">ut04a1_Colores</string>
 </resources>

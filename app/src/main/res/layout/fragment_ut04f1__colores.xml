@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ut04.ut04f0_Colores">
+
+    <TextView
+        android:id="@+id/ut04ftv_Color1"
+        android:layout_width="match_parent"
+        android:layout_height="117dp"
+        android:text="TextView" />
+</FrameLayout>

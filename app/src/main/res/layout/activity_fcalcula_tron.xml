@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".f_calculaTron">
+    tools:context=".ut03.f_calculaTron">
 
     <Button
         android:id="@+id/u1e3btOcho"
@@ -52,17 +52,6 @@
         app:layout_constraintTop_toTopOf="@+id/u1e3btCinco"
         tools:ignore="MissingConstraints" />
 
-    <RadioButton
-        android:id="@+id/u1e3rbtMalo"
-        android:layout_width="113dp"
-        android:layout_height="40dp"
-        android:text="Malo"
-        app:layout_constraintBottom_toBottomOf="@+id/u1e3rbtBueno"
-        app:layout_constraintEnd_toStartOf="@+id/u1e3rbtBueno"
-        app:layout_constraintTop_toTopOf="@+id/u1e3rbtBueno"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="MissingConstraints" />
-
     <Button
         android:id="@+id/u1e3btCinco"
         android:layout_width="136dp"
@@ -75,17 +64,6 @@
         app:layout_constraintTop_toBottomOf="@+id/u1e3btDos"
         tools:ignore="MissingConstraints" />
 
-    <RadioButton
-        android:id="@+id/u1e3rbtExcelente"
-        android:layout_width="108dp"
-        android:layout_height="39dp"
-        android:text="Excelente"
-        app:layout_constraintBottom_toBottomOf="@+id/u1e3rbtBueno"
-        app:layout_constraintStart_toEndOf="@+id/u1e3rbtBueno"
-        app:layout_constraintTop_toTopOf="@+id/u1e3rbtBueno"
-        app:layout_constraintVertical_bias="1.0"
-        tools:ignore="MissingConstraints" />
-
     <Button
         android:id="@+id/u1e3btClear"
         android:layout_width="136dp"
@@ -93,6 +71,7 @@
         android:text="C"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="@+id/u1e3btCero"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/u1e3btCero"
         app:layout_constraintTop_toTopOf="@+id/u1e3btCero"
         app:layout_constraintVertical_bias="0.0"
@@ -172,18 +151,6 @@
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
 
-    <RadioButton
-        android:id="@+id/u1e3rbtBueno"
-        android:layout_width="111dp"
-        android:layout_height="39dp"
-        android:text="Bueno"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/u1e3btCero"
-        app:layout_constraintVertical_bias="0.207"
-        tools:ignore="MissingConstraints" />
-
     <TextView
         android:id="@+id/u1e3tvOutput"
         android:layout_width="371dp"
@@ -209,7 +176,6 @@
         android:layout_width="249dp"
         android:layout_height="36dp"
         android:layout_marginBottom="36dp"
-        android:text="TextView"
         android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -225,6 +191,41 @@
         app:layout_constraintBottom_toTopOf="@+id/u1e3tvPropina"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/u1e3rbtBueno" />
+        app:layout_constraintTop_toBottomOf="@+id/u1e3rdbtng" />
+
+    <RadioGroup
+        android:id="@+id/u1e3rdbtng"
+        android:layout_width="326dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/u1e3btClear"
+        app:layout_constraintStart_toStartOf="@+id/u1e3btDel"
+        app:layout_constraintTop_toBottomOf="@+id/u1e3btCero">
+
+        <RadioButton
+            android:id="@+id/u1e3rdbtn_malo"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Malo"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/u1e3rdbtn_bueno"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Bueno"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/u1e3rdbtn_excelente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Excelente"
+            android:textSize="16sp" />
+    </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

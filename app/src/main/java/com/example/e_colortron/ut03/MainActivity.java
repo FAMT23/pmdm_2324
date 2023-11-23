@@ -1,4 +1,4 @@
-package com.example.e_colortron;
+package com.example.e_colortron.ut03;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,6 +11,8 @@ import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.Switch;
 import android.widget.TextView;
+
+import com.example.e_colortron.R;
 
 public class MainActivity extends AppCompatActivity {
 

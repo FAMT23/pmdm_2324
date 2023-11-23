@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#322196F3"
+    tools:context=".ut03.j_helados_lanzarDatosEntreActividades">
+
+    <Spinner
+        android:id="@+id/u1e8spnTipoHelado"
+        android:layout_width="280dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="120dp"
+        android:scrollbarSize="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/u1e8tvSaborChocolate"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="140dp"
+        android:text="Chocolate"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u1e8spnTipoHelado" />
+
+    <TextView
+        android:id="@+id/u1e8tvSaborFresa"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:text="Fresa"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/u1e8tvSaborChocolate"
+        app:layout_constraintStart_toStartOf="@+id/u1e8tvSaborChocolate"
+        app:layout_constraintTop_toBottomOf="@+id/u1e8tvSaborChocolate" />
+
+    <TextView
+        android:id="@+id/u1e8tvSaborVainilla"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:text="Vainilla"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/u1e8tvSaborFresa"
+        app:layout_constraintStart_toStartOf="@+id/u1e8tvSaborFresa"
+        app:layout_constraintTop_toBottomOf="@+id/u1e8tvSaborFresa" />
+
+    <EditText
+        android:id="@+id/u1e8etvUdsChocolate"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/u1e8tvSaborChocolate"
+        app:layout_constraintTop_toBottomOf="@+id/u1e8spnTipoHelado" />
+
+    <EditText
+        android:id="@+id/u1e8etvUdsFresa"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/u1e8etvUdsChocolate"
+        app:layout_constraintStart_toStartOf="@+id/u1e8etvUdsChocolate"
+        app:layout_constraintTop_toBottomOf="@+id/u1e8etvUdsChocolate" />
+
+    <EditText
+        android:id="@+id/u1e8etvUdsVainilla"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/u1e8etvUdsFresa"
+        app:layout_constraintStart_toStartOf="@+id/u1e8etvUdsFresa"
+        app:layout_constraintTop_toBottomOf="@+id/u1e8etvUdsFresa" />
+
+    <Button
+        android:id="@+id/u1e8btnGenerar"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:text="Generar"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u1e8tvSaborVainilla" />
+</androidx.constraintlayout.widget.ConstraintLayout>

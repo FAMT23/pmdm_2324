@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BDA43C"
+    tools:context=".ut03.m_7a_Metalslug">
+
+    <ImageView
+        android:id="@+id/u3a7aimg_personaje1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="148dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <Button
+        android:id="@+id/u3a7abtn_personaje2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="#7C0A02"
+        android:text="Jugador 2"
+        app:layout_constraintEnd_toEndOf="@+id/u3a7aimg_personaje2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/u3a7aimg_personaje2"
+        app:layout_constraintTop_toBottomOf="@+id/u3a7aimg_personaje2" />
+
+    <Button
+        android:id="@+id/u3a7abtn_arma1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="192dp"
+        android:backgroundTint="#7C0A02"
+        android:text="Arma 1"
+        app:layout_constraintEnd_toEndOf="@+id/u3a7aimg_personaje1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/u3a7aimg_personaje1"
+        app:layout_constraintTop_toBottomOf="@+id/u3a7abtn_personaje1" />
+
+    <ImageView
+        android:id="@+id/u3a7aimg_arma2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="396dp"
+        app:layout_constraintEnd_toEndOf="@+id/u3a7aimg_personaje2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/u3a7aimg_personaje2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <Button
+        android:id="@+id/u3a7abtn_personaje1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="#7C0A02"
+        android:text="Jugador 1"
+        app:layout_constraintEnd_toEndOf="@+id/u3a7aimg_personaje1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/u3a7aimg_personaje1"
+        app:layout_constraintTop_toBottomOf="@+id/u3a7aimg_personaje1" />
+
+    <Button
+        android:id="@+id/u3a7abtn_arma2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="192dp"
+        android:backgroundTint="#7C0A02"
+        android:text="Arma 2"
+        app:layout_constraintEnd_toEndOf="@+id/u3a7aimg_personaje2"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="@+id/u3a7aimg_personaje2"
+        app:layout_constraintTop_toBottomOf="@+id/u3a7abtn_personaje2" />
+
+    <ImageView
+        android:id="@+id/u3a7aimg_arma1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="396dp"
+        app:layout_constraintStart_toStartOf="@+id/u3a7aimg_personaje1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <ImageView
+        android:id="@+id/u3a7aimg_personaje2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cabecera_ok" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

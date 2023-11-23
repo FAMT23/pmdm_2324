@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BDA43C"
+    tools:context=".ut03.m_7b_Metalslug">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cabecera_ok" />
+
+    <Button
+        android:id="@+id/u3a7bbtn_aceptar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="340dp"
+        android:backgroundTint="#7C0A02"
+        android:text="Aceptar"
+        app:layout_constraintEnd_toEndOf="@+id/u3a7bbtn_img_p4"
+        app:layout_constraintStart_toStartOf="@+id/u3a7bbtn_img_p3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/u3a7bbtn_img_p1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="152dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/p1" />
+
+    <ImageView
+        android:id="@+id/u3a7bbtn_img_p4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u3a7bbtn_img_p2"
+        app:srcCompat="@drawable/p4" />
+
+    <ImageView
+        android:id="@+id/u3a7bbtn_img_p3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u3a7bbtn_img_p1"
+        app:srcCompat="@drawable/p3" />
+
+    <ImageView
+        android:id="@+id/u3a7bbtn_img_p2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/p2" />
+
+    <Button
+        android:id="@+id/u3a7bbtn_limpiar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#7C0A02"
+        android:text="Limpiar"
+        app:layout_constraintEnd_toEndOf="@+id/u3a7bbtn_aceptar"
+        app:layout_constraintStart_toStartOf="@+id/u3a7bbtn_aceptar"
+        app:layout_constraintTop_toBottomOf="@+id/u3a7bbtn_aceptar" />
+</androidx.constraintlayout.widget.ConstraintLayout>
