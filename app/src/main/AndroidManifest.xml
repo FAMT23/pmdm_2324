@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" >
+    xmlns:tools="http://schemas.android.com/tools">
 
     <application
         android:allowBackup="true"
@@ -11,12 +11,31 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.E_colorTron"
-        tools:targetApi="31" >
+        tools:targetApi="31">
+
         <activity
-            android:name=".ut04.ut04a0_Colores"
+            android:name=".ut04.ut043a_PinPon"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ut04.ut041a_ContadorActividades"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ut04.ut040a_Colores"
             android:exported="true"
             android:label="@string/title_activity_ut04a1_colores"
-            android:theme="@style/Theme.E_colorTron" >
+            android:theme="@style/Theme.E_colorTron">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -31,7 +50,7 @@
             android:exported="false" />
         <activity
             android:name=".ut03.m_7a_Metalslug"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -43,7 +62,7 @@
             android:exported="false" />
         <activity
             android:name=".ut03.l_6a_Analisis_letras"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -55,7 +74,7 @@
             android:exported="false" />
         <activity
             android:name=".ut03.k_5a_Fibonacci"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -67,7 +86,7 @@
             android:exported="false" />
         <activity
             android:name=".ut03.j_helados_lanzarDatosEntreActividades"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -76,7 +95,7 @@
         </activity>
         <activity
             android:name=".ut03.h_piedraPapelTijera"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -85,7 +104,7 @@
         </activity>
         <activity
             android:name=".ut03.g_pedirCita"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -94,7 +113,7 @@
         </activity>
         <activity
             android:name=".ut03.f_calculaTron"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

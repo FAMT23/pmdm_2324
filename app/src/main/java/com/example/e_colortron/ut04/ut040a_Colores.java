@@ -8,10 +8,10 @@ import android.widget.TextView;
 
 import com.example.e_colortron.R;
 
-public class ut04a0_Colores extends AppCompatActivity {
+public class ut040a_Colores extends AppCompatActivity {
 
     ImageView estrella;
-    ut04f0_Colores fragment;
+    ut040f_Colores fragment;
     TextView txt_color;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,10 +21,11 @@ public class ut04a0_Colores extends AppCompatActivity {
         estrella=findViewById(R.id.ut4a1_imgLanzador);
         txt_color=findViewById(R.id.ut04a1txt_Color);
 
-        fragment=(ut04f0_Colores) getSupportFragmentManager().findFragmentById(R.id.ut04f1fg_color);
+        fragment=(ut040f_Colores) getSupportFragmentManager().findFragmentById(R.id.ut04f1fg_color);
         estrella.setOnClickListener((view -> {
             fragment.setColor(0xFF,00,0xFF);
         }));
+        //Aquí le pasamos los datos del fragment a la actividad
         fragment.setColorChangeListener((int c)-> txt_color.setText(String.valueOf(c)));
     }
 }

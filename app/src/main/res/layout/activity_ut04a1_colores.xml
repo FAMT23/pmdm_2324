@@ -4,36 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ut04.ut04a0_Colores">
+    tools:context=".ut04.ut040a_Colores">
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/ut04f1fg_color"
-        android:name="com.example.e_colortron.ut04.ut04f0_Colores"
+        android:name="com.example.e_colortron.ut04.ut040f_Colores"
         android:layout_width="240dp"
         android:layout_height="120dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginBottom="80dp"
         android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/ut4a1_imgLanzador"
         app:layout_constraintEnd_toEndOf="@+id/ut4a1_imgLanzador"
-        app:layout_constraintStart_toStartOf="@+id/ut4a1_imgLanzador"
-        app:layout_constraintTop_toBottomOf="@+id/ut4a1_imgLanzador" />
+        app:layout_constraintStart_toStartOf="@+id/ut4a1_imgLanzador" />
 
     <TextView
         android:id="@+id/ut04a1txt_Color"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="@+id/ut4a1_imgLanzador"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/ut4a1_imgLanzador" />
+        app:layout_constraintTop_toTopOf="@+id/ut4a1_imgLanzador"
+        app:layout_constraintVertical_bias="0.493" />
 
     <ImageView
         android:id="@+id/ut4a1_imgLanzador"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="151dp"
+        android:layout_height="104dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="140dp"
         android:layout_marginEnd="40dp"
+        android:layout_marginBottom="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:src="@drawable/p1" />

@@ -3,11 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ut04.ut040f_Colores">
+    tools:context=".ut04.ut041f_ContadorActividades">
 
+    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:id="@+id/ut04ftv_Color1"
+        android:id="@+id/ut043f_fragment"
         android:layout_width="match_parent"
-        android:layout_height="117dp"
-        android:text="TextView" />
+        android:layout_height="match_parent" />
+
 </FrameLayout>
