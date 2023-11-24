@@ -70,9 +70,6 @@
             android:text="TextView"
             app:layout_constraintEnd_toEndOf="@+id/ut043fbtn_marcador2"
             app:layout_constraintTop_toTopOf="parent" />
-
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
