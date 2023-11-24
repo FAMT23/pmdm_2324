@@ -4,49 +4,70 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#7890a8"
     tools:context=".ut04.ut043a_PinPon">
 
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragmentContainerView2"
+        android:id="@+id/ut043f_frgEquipo1"
         android:name="com.example.e_colortron.ut04.ut043f_PinPon"
         android:layout_width="wrap_content"
-        android:layout_height="120dp"
-        android:layout_marginTop="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        app:layout_constraintTop_toBottomOf="@+id/ut043atv_resultados"
+        tools:layout_editor_absoluteX="206dp" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/ut043f_frgEquipo2"
+        android:name="com.example.e_colortron.ut04.ut043f_PinPon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/ut043f_frgEquipo1"
+        app:layout_constraintStart_toStartOf="@+id/ut043f_frgEquipo1"
+        app:layout_constraintTop_toBottomOf="@+id/ut043f_frgEquipo1" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/ut043f_frgEquipo3"
+        android:name="com.example.e_colortron.ut04.ut043f_PinPon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/ut043f_frgEquipo2"
+        app:layout_constraintStart_toStartOf="@+id/ut043f_frgEquipo2"
+        app:layout_constraintTop_toBottomOf="@+id/ut043f_frgEquipo2" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/ut043f_frgEquipo4"
+        android:name="com.example.e_colortron.ut04.ut043f_PinPon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/ut043f_frgEquipo3"
+        app:layout_constraintStart_toStartOf="@+id/ut043f_frgEquipo3"
+        app:layout_constraintTop_toBottomOf="@+id/ut043f_frgEquipo3" />
+
+    <TextView
+        android:id="@+id/ut043atv_resultados"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#304878"
+        android:backgroundTint="#304878"
+        android:fontFamily="monospace"
+        android:textAlignment="center"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragmentContainerView3"
-        android:name="com.example.e_colortron.ut04.ut043f_PinPon"
-        android:layout_width="wrap_content"
-        android:layout_height="120dp"
-        android:layout_marginTop="40dp"
+    <Button
+        android:id="@+id/ut043abtn_reinicio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#f0a818"
+        android:text="Reiniciar"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/ut043f_frgEquipo1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fragmentContainerView2" />
+        app:layout_constraintTop_toBottomOf="@+id/ut043atv_resultados"
+        app:layout_constraintVertical_bias="1.0" />
 
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragmentContainerView4"
-        android:name="com.example.e_colortron.ut04.ut043f_PinPon"
-        android:layout_width="wrap_content"
-        android:layout_height="120dp"
-        android:layout_marginTop="40dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fragmentContainerView3" />
-
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragmentContainerView5"
-        android:name="com.example.e_colortron.ut04.ut043f_PinPon"
-        android:layout_width="wrap_content"
-        android:layout_height="120dp"
-        android:layout_marginTop="40dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fragmentContainerView4" />
 </androidx.constraintlayout.widget.ConstraintLayout>

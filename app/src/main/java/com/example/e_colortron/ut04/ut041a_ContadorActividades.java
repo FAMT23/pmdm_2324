@@ -23,26 +23,39 @@ public class ut041a_ContadorActividades extends AppCompatActivity {
         tarea2=findViewById(R.id.ut041atv_tarea2);
         tarea3=findViewById(R.id.ut041atv_tarea3);
 
-
         frgContadorActividadesT1=(ut041f_ContadorActividades) getSupportFragmentManager().findFragmentById(R.id.ut041ftv_frgTarea1);
         frgContadorActividadesT2=(ut041f_ContadorActividades) getSupportFragmentManager().findFragmentById(R.id.ut041ftv_frgTarea2);
         frgContadorActividadesT3=(ut041f_ContadorActividades) getSupportFragmentManager().findFragmentById(R.id.ut041ftv_frgTarea3);
 
         //Por qué no puedo asignarle un nombre a cada textview del fragment
         //¿Por qué hace falta meterlo en un evento?
+        /*
         View.OnClickListener manejador=view -> {
             frgContadorActividadesT1.setText("Tarea 1");
             frgContadorActividadesT2.setText("Tarea 2");
             frgContadorActividadesT3.setText("Tarea 3");
         };
+
         tarea1.setOnClickListener(manejador);
         tarea2.setOnClickListener(manejador);
         tarea3.setOnClickListener(manejador);
-
+        */
 
         frgContadorActividadesT1.herramientaCambiarInfo((String info)-> tarea1.append(info));
         frgContadorActividadesT2.herramientaCambiarInfo((String info)-> tarea2.append(info));
         frgContadorActividadesT3.herramientaCambiarInfo((String info)-> tarea3.append(info));
 
+    }
+
+    /*
+    Hay que ponerlo en el onStart si queremos personalizar cada fragment. Ya que si lo hacemos en el onCrete daría error
+    al no haberse creado aún por el ciclo de vida en Android Studio
+    */
+    @Override
+    protected void onStart() {
+        super.onStart();
+        frgContadorActividadesT1.setText("Tarea 1");
+        frgContadorActividadesT2.setText("Tarea 2");
+        frgContadorActividadesT3.setText("Tarea 3");
     }
 }

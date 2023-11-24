@@ -90,6 +90,6 @@ public class ut041f_ContadorActividades extends Fragment {
     }
 
     public void setText(String txt){
-        this.tv_fragment.setText(txt);
+        tv_fragment.setText(txt);
     }
 }
