@@ -135,11 +135,22 @@ public class ut043f_PinPon extends Fragment {
         return layout;
     }
 
+
+    // Creamos una interfaz en la cual creamos un método (que hará lo que se le indique en cada o
+    /*
+    * Las interfaces en Java se utilizan para definir un conjunto de métodos que
+    * deben ser implementados por cualquier clase que implemente esta interfaz
+    * */
     public interface enviaInfo{
         public void cambiaInfo(String info);
     }
 
+    // Usamos una interfaz
+    // Esta variable se utilizará para almacenar una instancia de cualquier clase que
+    // implemente la interfaz
     enviaInfo cambiador;
+
+    // Creamos un método que conectará
     public  void herramientaCambiarInfo(enviaInfo receptorInfo){
         cambiador=receptorInfo;
     }

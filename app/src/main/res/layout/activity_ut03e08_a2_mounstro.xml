@@ -4,25 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ut03.ut03e06_A2_AnalisisLetras">
+    tools:context=".ut03.ut03e08_A2_Mounstro">
 
     <TextView
-        android:id="@+id/u3a6btv_listadoOrdenado"
-        android:layout_width="wrap_content"
+        android:id="@+id/ut03e08a2tv_Mounstro"
+        android:layout_width="409dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:fontFamily="monospace"
         android:text="TextView"
+        android:textAlignment="textStart"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/u3a6bbtn_Finalizar"
+    <TextView
+        android:id="@+id/ut03e08a2tv_MounstroNombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:text="Finalizar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/u3a6btv_listadoOrdenado" />
+        android:layout_marginBottom="40dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/ut03e08a2tv_Mounstro"
+        app:layout_constraintEnd_toEndOf="@+id/ut03e08a2tv_Mounstro"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ut03e08a2tv_Mounstro" />
 </androidx.constraintlayout.widget.ConstraintLayout>

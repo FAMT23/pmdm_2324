@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import com.example.e_colortron.R;
 
-public class j_helados_lanzadaDatosEntreActividades extends AppCompatActivity {
+public class ut03e03_Heladeria_lazadaDatosEntreActividades extends AppCompatActivity {
 
     TextView tv_datoLanzado, tv_saboresLanzados;
     @Override
@@ -21,15 +21,15 @@ public class j_helados_lanzadaDatosEntreActividades extends AppCompatActivity {
 
         Bundle info=getIntent().getExtras();
 
-        String seleccion=info.getString(j_helados_lanzarDatosEntreActividades.SELECCION);
-        String uds_chco=info.getString(j_helados_lanzarDatosEntreActividades.SABORCHOCOLATE);
-        String uds_fresa=info.getString(j_helados_lanzarDatosEntreActividades.SABORFRESA);
-        String uds_vainilla=info.getString(j_helados_lanzarDatosEntreActividades.SABORVAINILLA);
+        String seleccion=info.getString(ut03e03_Heladeria_lazarDatosEntreActividades.SELECCION);
+        String uds_chco=info.getString(ut03e03_Heladeria_lazarDatosEntreActividades.SABORCHOCOLATE);
+        String uds_fresa=info.getString(ut03e03_Heladeria_lazarDatosEntreActividades.SABORFRESA);
+        String uds_vainilla=info.getString(ut03e03_Heladeria_lazarDatosEntreActividades.SABORVAINILLA);
         String opcion="";
 
         String [] udsSabores={uds_chco,uds_fresa,uds_vainilla};
         String [] sabores={"Chocolate","Fresa","Vainilla"};
-        Object sChoco=info.get(j_helados_lanzarDatosEntreActividades.SABORCHOCOLATE);
+        Object sChoco=info.get(ut03e03_Heladeria_lazarDatosEntreActividades.SABORCHOCOLATE);
         String saboresLista=uds_helados(udsSabores,sabores);
 
         if(seleccion.toString().toUpperCase().equals("CUCURUCHO")){

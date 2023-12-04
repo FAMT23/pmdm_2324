@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ut03.g_pedirCita">
+    tools:context=".ut02.ut02e05_A1_PedirCita">
 
     <EditText
         android:id="@+id/u1e5etxdate"
@@ -16,5 +16,37 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ut02e05_btnCalendario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Calendario"
+        app:layout_constraintBottom_toTopOf="@+id/ut02e05_btnHora"
+        app:layout_constraintEnd_toEndOf="@+id/u1e5etxdate"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/u1e5etxdate" />
+
+    <Button
+        android:id="@+id/ut02e05_btnHora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/u1e5etxdate"
+        app:layout_constraintEnd_toEndOf="@+id/u1e5etxdate"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/u1e5etxdate" />
+
+    <TextView
+        android:id="@+id/ut02e05_tvHora"
+        android:layout_width="148dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/u1e5etxdate"
+        app:layout_constraintStart_toStartOf="@+id/u1e5etxdate"
+        app:layout_constraintTop_toBottomOf="@+id/u1e5etxdate" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

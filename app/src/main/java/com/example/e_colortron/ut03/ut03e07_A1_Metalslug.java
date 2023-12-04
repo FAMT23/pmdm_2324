@@ -14,7 +14,7 @@ import android.widget.ImageView;
 
 import com.example.e_colortron.R;
 
-public class m_7a_Metalslug extends AppCompatActivity {
+public class ut03e07_A1_Metalslug extends AppCompatActivity {
 
     Button btn_personaje1,btn_personaje2,btn_arma1,btn_arma2;
     ImageView img_personaje1,img_personaje2,img_arma1,img_arma2;
@@ -46,10 +46,10 @@ public class m_7a_Metalslug extends AppCompatActivity {
                 if(result.getResultCode()== Activity.RESULT_OK){
                     Intent personaje=result.getData();
                     // Recuperamos el drawable de la imagen seleccionada
-                    String id_judador=personaje.getStringExtra(m_7b_Metalslug.ID_PERSONAJE);
-                    String tag_elegido=personaje.getStringExtra(m_7b_Metalslug.TAG_ELEGIDO);
+                    String id_judador=personaje.getStringExtra(ut03e05_A2_Metalslug.ID_PERSONAJE);
+                    String tag_elegido=personaje.getStringExtra(ut03e05_A2_Metalslug.TAG_ELEGIDO);
 
-                    int img=personaje.getIntExtra(m_7b_Metalslug.IMG_PERSONAJE,0);
+                    int img=personaje.getIntExtra(ut03e05_A2_Metalslug.IMG_PERSONAJE,0);
                     //btn_arma1.setText(id_judador);
                     switch (id_judador){
                         case "Jugador 1":
@@ -81,9 +81,9 @@ public class m_7a_Metalslug extends AppCompatActivity {
                         if(result.getResultCode()== Activity.RESULT_OK){
                             Intent arma=result.getData();
                             // Recuperamos el drawable de la imagen seleccionada
-                            String id_judador=arma.getStringExtra(m_7c_Metalslug.ID_PERSONAJE);
-                            String tag_elegido=arma.getStringExtra(m_7c_Metalslug.TAG_ELEGIDO);
-                            int img=arma.getIntExtra(m_7c_Metalslug.IMG_PERSONAJE,0);
+                            String id_judador=arma.getStringExtra(ut03e07_A3_Metalslug.ID_PERSONAJE);
+                            String tag_elegido=arma.getStringExtra(ut03e07_A3_Metalslug.TAG_ELEGIDO);
+                            int img=arma.getIntExtra(ut03e07_A3_Metalslug.IMG_PERSONAJE,0);
                             //btn_arma1.setText(tag_elegido);
                             switch (id_judador){
                                 case "Arma 1":
@@ -114,7 +114,7 @@ public class m_7a_Metalslug extends AppCompatActivity {
             boton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent i_act1 = new Intent(m_7a_Metalslug.this, m_7b_Metalslug.class);
+                    Intent i_act1 = new Intent(ut03e07_A1_Metalslug.this, ut03e05_A2_Metalslug.class);
                     // Le pasamos el GetText del botón para saber el jugador que estamos modificando
                     i_act1.putExtra(TAG_JUGADOR,boton.getTag().toString());
                     i_act1.putExtra(ID_JUGADOR,boton.getText());
@@ -137,7 +137,7 @@ public class m_7a_Metalslug extends AppCompatActivity {
             boton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent i_act2 = new Intent(m_7a_Metalslug.this, m_7c_Metalslug.class);
+                    Intent i_act2 = new Intent(ut03e07_A1_Metalslug.this, ut03e07_A3_Metalslug.class);
                     // Le pasamos el GetText del botón para saber el jugador que estamos modificando
                     i_act2.putExtra(TAG_ARMA,boton.getTag().toString());
                     i_act2.putExtra(ID_ARMA,boton.getText());

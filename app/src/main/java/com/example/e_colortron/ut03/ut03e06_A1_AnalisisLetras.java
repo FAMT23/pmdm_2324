@@ -16,7 +16,7 @@ import android.widget.TextView;
 import com.example.e_colortron.R;
 
 
-public class l_6a_Analisis_letras extends AppCompatActivity {
+public class ut03e06_A1_AnalisisLetras extends AppCompatActivity {
 
     // Declaramos las variables necesarias de la actividad
     Button btn_analizar;
@@ -33,6 +33,7 @@ public class l_6a_Analisis_letras extends AppCompatActivity {
         tv_topTres=findViewById(R.id.u3a6atv_ListadoTopTres);
         etxt_insertar=findViewById(R.id.u3a6aetxt_InsertarTexto);
 
+
         ActivityResultLauncher<Intent> lanzarListado=registerForActivityResult(new ActivityResultContracts.StartActivityForResult(),
                 new ActivityResultCallback<ActivityResult>() {
                     @Override
@@ -40,13 +41,13 @@ public class l_6a_Analisis_letras extends AppCompatActivity {
                         if(result.getResultCode()== Activity.RESULT_OK){
                             Intent datos=result.getData();
                             //Ahora nos falta trabajar con estos datos
-                            tv_topTres.setText(datos.getStringExtra(l_6b_Analisis_letras.LISTADO_OUTPUT));
+                            tv_topTres.setText(datos.getStringExtra(ut03e06_A2_AnalisisLetras.LISTADO_OUTPUT));
                         }
                     }
         });
 
         btn_analizar.setOnClickListener(view -> {
-            Intent i=new Intent(this, l_6b_Analisis_letras.class);
+            Intent i=new Intent(this, ut03e06_A2_AnalisisLetras.class);
             i.putExtra(LISTADO_INPUT,etxt_insertar.getText().toString());
 
             //Vamos a lanzar la actividad con el vagón para que traiga la info

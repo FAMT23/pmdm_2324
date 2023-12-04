@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import com.example.e_colortron.R;
 
-public class k_5b_Fibonacci extends AppCompatActivity {
+public class ut03e05_A2_Fibonacci extends AppCompatActivity {
 
     public static final String DATO = "2";
     //Declaramos las variables necesarias.
@@ -33,8 +33,8 @@ public class k_5b_Fibonacci extends AppCompatActivity {
         Bundle info=getIntent().getExtras();
 
         // Desglosamos las variables necesarias de la otra actividad. Podemos obtener distintos tipos de datos get(int, string, boolean...)
-        num1=info.getInt(k_5a_Fibonacci.NUM1);
-        num2=info.getInt(k_5a_Fibonacci.NUM2);
+        num1=info.getInt(ut03e05_A1_Fibonacci.NUM1);
+        num2=info.getInt(ut03e05_A1_Fibonacci.NUM2);
 
         //Realozamos el cálculo
         resultado=num1+num2;

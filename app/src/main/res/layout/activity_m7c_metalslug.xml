@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#BDA43C"
-    tools:context=".ut03.m_7c_Metalslug">
+    tools:context=".ut03.ut03e07_A3_Metalslug">
 
     <ImageView
         android:id="@+id/imageView6"

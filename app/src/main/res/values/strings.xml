@@ -14,4 +14,5 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_ut04a1_colores">ut04a1_Colores</string>
+    <string name="ut03e6_A1_btnStrAnalizar" translatable="false">Analizar</string>
 </resources>

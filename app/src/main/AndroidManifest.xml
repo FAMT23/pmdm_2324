@@ -2,6 +2,21 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.DIAL" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.WEB_SEARCH" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SET_ALARM" />
+        </intent>
+    </queries>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,9 +27,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.E_colorTron"
         tools:targetApi="31">
+        <activity
+            android:name=".ut03.ut03e08_A2_Mounstro"
+            android:exported="false" />
+        <activity
+            android:name=".ut03.ut03e08_A1_MounstroSerializable"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ut03.ut03e09_A1_IntentImplicitos"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".ut04.ut043a_PinPon"
+            android:configChanges="orientation|screenSize"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -43,13 +79,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ut03.m_7c_Metalslug"
+            android:name=".ut03.ut03e07_A3_Metalslug"
             android:exported="false" />
         <activity
-            android:name=".ut03.m_7b_Metalslug"
+            android:name=".ut03.ut03e05_A2_Metalslug"
             android:exported="false" />
         <activity
-            android:name=".ut03.m_7a_Metalslug"
+            android:name=".ut03.ut03e07_A1_Metalslug"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -58,10 +94,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ut03.l_6b_Analisis_letras"
+            android:name=".ut03.ut03e06_A2_AnalisisLetras"
             android:exported="false" />
         <activity
-            android:name=".ut03.l_6a_Analisis_letras"
+            android:name=".ut03.ut03e06_A1_AnalisisLetras"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -70,10 +106,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ut03.k_5b_Fibonacci"
+            android:name=".ut03.ut03e05_A2_Fibonacci"
             android:exported="false" />
         <activity
-            android:name=".ut03.k_5a_Fibonacci"
+            android:name=".ut03.ut03e05_A1_Fibonacci"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -82,10 +118,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ut03.j_helados_lanzadaDatosEntreActividades"
+            android:name=".ut03.ut03e03_Heladeria_lazadaDatosEntreActividades"
             android:exported="false" />
         <activity
-            android:name=".ut03.j_helados_lanzarDatosEntreActividades"
+            android:name=".ut03.ut03e03_Heladeria_lazarDatosEntreActividades"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -94,7 +130,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ut03.h_piedraPapelTijera"
+            android:name=".ut02.ut02e08_A1_PiedraPapelTijera"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -103,7 +139,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ut03.g_pedirCita"
+            android:name=".ut02.ut02e05_A1_PedirCita"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -112,7 +148,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ut03.f_calculaTron"
+            android:name=".ut02.ut02e03_A1_Propinatron"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

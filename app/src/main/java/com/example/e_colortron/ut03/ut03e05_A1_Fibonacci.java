@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 import com.example.e_colortron.R;
 
-public class k_5a_Fibonacci extends AppCompatActivity {
+public class ut03e05_A1_Fibonacci extends AppCompatActivity {
 
     //Declaramos variables necesarias.
     Button btn_siguiente;
@@ -46,7 +46,7 @@ public class k_5a_Fibonacci extends AppCompatActivity {
                             Intent datos = result.getData();
                             //Modificamos en nuestra actividad lo que deseemos con esos datos obtenidos de la segunda actividad.
                             tv_n1.setText(tv_n2.getText().toString());
-                            tv_n2.setText(datos.getStringExtra(k_5b_Fibonacci.DATO));
+                            tv_n2.setText(datos.getStringExtra(ut03e05_A2_Fibonacci.DATO));
                         }
                     }
                 });
@@ -54,7 +54,7 @@ public class k_5a_Fibonacci extends AppCompatActivity {
         //  Evento que genera el intent que que lanza los datos a la segunda actividad.
         btn_siguiente.setOnClickListener(view -> {
 
-            Intent i=new Intent(this, k_5b_Fibonacci.class);
+            Intent i=new Intent(this, ut03e05_A2_Fibonacci.class);
             i.putExtra(NUM1,Integer.parseInt(tv_n1.getText().toString()) );
             i.putExtra(NUM2,Integer.parseInt(tv_n2.getText().toString()) );
 

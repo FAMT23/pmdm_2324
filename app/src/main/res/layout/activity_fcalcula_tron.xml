@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ut03.f_calculaTron">
+    tools:context=".ut02.ut02e03_A1_Propinatron">
 
     <Button
         android:id="@+id/u1e3btOcho"

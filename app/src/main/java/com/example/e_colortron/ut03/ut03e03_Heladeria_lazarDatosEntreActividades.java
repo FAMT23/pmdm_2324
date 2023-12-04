@@ -13,7 +13,7 @@ import android.widget.Spinner;
 
 import com.example.e_colortron.R;
 
-public class j_helados_lanzarDatosEntreActividades extends AppCompatActivity {
+public class ut03e03_Heladeria_lazarDatosEntreActividades extends AppCompatActivity {
 
     Spinner spinner;
     Button btn_generar;
@@ -61,7 +61,7 @@ public class j_helados_lanzarDatosEntreActividades extends AppCompatActivity {
         });
 
         btn_generar.setOnClickListener(view -> {
-                Intent i=new Intent(this, j_helados_lanzadaDatosEntreActividades.class);
+                Intent i=new Intent(this, ut03e03_Heladeria_lazadaDatosEntreActividades.class);
                 i.putExtra(SELECCION,seleccion);
                 i.putExtra(SABORCHOCOLATE,etv_uds_Chocolate.getText().toString());
                 i.putExtra(SABORFRESA,etv_uds_Fresa.getText().toString());

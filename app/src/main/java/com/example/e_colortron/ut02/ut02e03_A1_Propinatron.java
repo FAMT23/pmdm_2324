@@ -1,4 +1,4 @@
-package com.example.e_colortron.ut03;
+package com.example.e_colortron.ut02;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import com.example.e_colortron.R;
 
-public class f_calculaTron extends AppCompatActivity {
+public class ut02e03_A1_Propinatron extends AppCompatActivity {
 
     View.OnClickListener controlador;
     Button btn_0, btn_1, btn_2, btn_3, btn_4, btn_5,btn_6,btn_7, btn_8, btn_9, btn_del, btn_c, btn_generar;

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ut03.k_5a_Fibonacci">
+    tools:context=".ut03.ut03e05_A1_Fibonacci">
 
     <TextView
         android:id="@+id/u3a5atv_num1"

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ut03.ut03e08_A1_MounstroSerializable">
+
+    <Button
+        android:id="@+id/ut03e08a1btn_Mounstro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mounstro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ut03e08a1etv_MColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/ut03e08a1btn_Mounstro"
+        app:layout_constraintEnd_toEndOf="@+id/ut03e08a1btn_Mounstro"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/ut03e08a1btn_Mounstro" />
+
+    <EditText
+        android:id="@+id/ut03e08a1etv_MExtremidades"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:inputType="number"
+        android:text="Extremidaddes"
+        app:layout_constraintBottom_toTopOf="@+id/ut03e08a1etv_MColor"
+        app:layout_constraintEnd_toEndOf="@+id/ut03e08a1etv_MColor"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ut03e08a1etv_MColor" />
+
+    <EditText
+        android:id="@+id/ut03e08a1etv_MNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/ut03e08a1etv_MExtremidades"
+        app:layout_constraintEnd_toEndOf="@+id/ut03e08a1etv_MExtremidades"
+        app:layout_constraintStart_toStartOf="@+id/ut03e08a1etv_MExtremidades"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

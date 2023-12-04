@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#322196F3"
-    tools:context=".ut03.j_helados_lanzarDatosEntreActividades">
+    tools:context=".ut03.ut03e03_Heladeria_lazarDatosEntreActividades">
 
     <Spinner
         android:id="@+id/u1e8spnTipoHelado"

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ut03.l_6a_Analisis_letras">
+    tools:context=".ut03.ut03e06_A1_AnalisisLetras">
 
     <EditText
         android:id="@+id/u3a6aetxt_InsertarTexto"
@@ -23,7 +23,7 @@
         android:layout_width="141dp"
         android:layout_height="55dp"
         android:layout_marginTop="60dp"
-        android:text="Analizar"
+        android:text="@string/ut03e6_A1_btnStrAnalizar"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

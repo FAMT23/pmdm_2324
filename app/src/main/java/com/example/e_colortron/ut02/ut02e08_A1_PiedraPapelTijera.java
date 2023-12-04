@@ -1,7 +1,6 @@
-package com.example.e_colortron.ut03;
+package com.example.e_colortron.ut02;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,7 +9,7 @@ import android.widget.TextView;
 
 import com.example.e_colortron.R;
 
-public class h_piedraPapelTijera extends AppCompatActivity {
+public class ut02e08_A1_PiedraPapelTijera extends AppCompatActivity {
 
     View.OnClickListener controlador;
     ImageView imgHumano, imgRobot, imgPiedra, imgPapel, imgTijera;

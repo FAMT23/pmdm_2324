@@ -18,7 +18,7 @@ import com.example.e_colortron.R;
 
 import java.util.LinkedHashMap;
 
-public class l_6b_Analisis_letras extends AppCompatActivity {
+public class ut03e06_A2_AnalisisLetras extends AppCompatActivity {
 
     Button btn_finalizar;
     TextView tv_listadoOutput;
@@ -42,7 +42,7 @@ public class l_6b_Analisis_letras extends AppCompatActivity {
         tv_listadoOutput=findViewById(R.id.u3a6btv_listadoOrdenado);
 
         Bundle info=getIntent().getExtras();
-        listadoOriginal=info.getString(l_6a_Analisis_letras.LISTADO_INPUT);
+        listadoOriginal=info.getString(ut03e06_A1_AnalisisLetras.LISTADO_INPUT);
 
         // https://www.geeksforgeeks.org/java-program-to-sort-linkedhashmap-by-values/
         LinkedHashMap<String, Integer> lhm_letras = new LinkedHashMap<>();

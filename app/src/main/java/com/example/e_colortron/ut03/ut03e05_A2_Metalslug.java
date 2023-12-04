@@ -14,46 +14,41 @@ import android.widget.ImageView;
 
 import com.example.e_colortron.R;
 
-public class m_7c_Metalslug extends AppCompatActivity {
-
-    ImageView iv_a1,iv_a2,iv_a3,iv_a4;
-    Button btn_aceptar,btn_limpiar;
-
-    String tagElegido;
-
-    int personaje_elegido;
+public class ut03e05_A2_Metalslug extends AppCompatActivity {
+    Button btn_aceptar, btn_limpiar;
+    ImageView iv_p1,iv_p2,iv_p3,iv_p4;
     View.OnClickListener controladorTag;
+    String tagElegido;
+    int personaje_elegido;
 
     public static final String IMG_PERSONAJE="1";
     public static final String ID_PERSONAJE="2";
     public static final String TAG_ELEGIDO="3";
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_m7c_metalslug);
-        //--------
+        setContentView(R.layout.activity_m7b_metalslug);
 
-        btn_aceptar=findViewById(R.id.u3a7cbtn_aceptar);
-        btn_limpiar=findViewById(R.id.u3a7cbtn_limpiar);
+        btn_aceptar=findViewById(R.id.u3a7bbtn_aceptar);
+        btn_limpiar=findViewById(R.id.u3a7bbtn_limpiar);
 
-        iv_a1=findViewById(R.id.u3a7cbtn_img_a1);
-        iv_a2=findViewById(R.id.u3a7cbtn_img_a2);
-        iv_a3=findViewById(R.id.u3a7cbtn_img_a3);
-        iv_a4=findViewById(R.id.u3a7cbtn_img_a4);
+        iv_p1=findViewById(R.id.u3a7bbtn_img_p1);
+        iv_p2=findViewById(R.id.u3a7bbtn_img_p2);
+        iv_p3=findViewById(R.id.u3a7bbtn_img_p3);
+        iv_p4=findViewById(R.id.u3a7bbtn_img_p4);
 
         // Asigamos tags a cada una de las imágenes para poder reconocerlas
-        iv_a1.setTag("A1");
-        iv_a2.setTag("A2");
-        iv_a3.setTag("A3");
-        iv_a4.setTag("A4");
+        iv_p1.setTag("P1");
+        iv_p2.setTag("P2");
+        iv_p3.setTag("P3");
+        iv_p4.setTag("P4");
 
         //Recibimos el jugador (1 o 2) que está seleccionando personaje y su tag del personaje inverso para poder bloquearlo.
         Bundle info_jugador=getIntent().getExtras();
-        String id_jugador=info_jugador.getString(m_7a_Metalslug.ID_ARMA);
-        String tag_jugador=info_jugador.getString(m_7a_Metalslug.TAG_ARMA);
-
-
+        String id_jugador=info_jugador.getString(ut03e07_A1_Metalslug.ID_JUGADOR);
+        String tag_jugador=info_jugador.getString(ut03e07_A1_Metalslug.TAG_JUGADOR);
 
         // Posibles errores
         //Qué pasa si entra y no seleciona ningún personaje después de haber seleccionado un jugador uno ya.
@@ -64,45 +59,47 @@ public class m_7c_Metalslug extends AppCompatActivity {
 
         // Si entro y no selecciona se indicará el personaje por defecto. Puesto que indico que el tag es null y mando como KO la actividad
         tagElegido= null;
+
         btn_aceptar.setOnClickListener(view -> {
-            Intent arma=new Intent();
+            Intent personaje=new Intent();
 
             // Dejamos el que está por defecto en caso de que no se haya seleccionado ninguno y se de al botón aceptar.
             if (tagElegido==null){
                 // Poder verificar que si no hemos clicado sobre ningún personaje no aplique cambios.
-                setResult(Activity.RESULT_CANCELED,arma);
+                setResult(Activity.RESULT_CANCELED,personaje);
                 finish();
             } else if (tagElegido.equals("Limpiar")) {
                 // Poder verificar si tengo que limpiar el jugador seleccionado
                 personaje_elegido=R.drawable.ic_launcher_foreground;
-                setResult(Activity.RESULT_OK,arma);
-                arma.putExtra(ID_PERSONAJE,id_jugador);
-                arma.putExtra(TAG_ELEGIDO,tagElegido);
-                arma.putExtra(IMG_PERSONAJE,personaje_elegido);
+                setResult(Activity.RESULT_OK,personaje);
+                personaje.putExtra(ID_PERSONAJE,id_jugador);
+                personaje.putExtra(TAG_ELEGIDO,tagElegido);
+                personaje.putExtra(IMG_PERSONAJE,personaje_elegido);
                 finish();
 
             } else{
                 switch (tagElegido){
-                    case "A1":
-                        personaje_elegido=R.drawable.a1;
+                    case "P1":
+                        personaje_elegido=R.drawable.p1;
                         break;
-                    case "A2":
-                        personaje_elegido=R.drawable.a2;
+                    case "P2":
+                        personaje_elegido=R.drawable.p2;
                         break;
-                    case "A3":
-                        personaje_elegido=R.drawable.a3;
+                    case "P3":
+                        personaje_elegido=R.drawable.p3;
                         break;
-                    case "A4":
-                        personaje_elegido=R.drawable.a4;
+                    case "P4":
+                        personaje_elegido=R.drawable.p4;
                         break;
                     default:
-                        personaje_elegido=R.drawable.a1;
+                        personaje_elegido=R.drawable.p1;
                         break;
                 }
-                setResult(Activity.RESULT_OK,arma);
-                arma.putExtra(ID_PERSONAJE,id_jugador);
-                arma.putExtra(TAG_ELEGIDO,tagElegido);
-                arma.putExtra(IMG_PERSONAJE,personaje_elegido);
+
+                setResult(Activity.RESULT_OK,personaje);
+                personaje.putExtra(ID_PERSONAJE,id_jugador);
+                personaje.putExtra(TAG_ELEGIDO,tagElegido);
+                personaje.putExtra(IMG_PERSONAJE,personaje_elegido);
                 finish();
             }
 
@@ -116,21 +113,21 @@ public class m_7c_Metalslug extends AppCompatActivity {
 
         // Identificamos la imagen a la que aplicar la matriz de color y desabilizar que se pueda clicar.
         switch (tag_jugador){
-            case "A1":
-                iv_a1.setColorFilter(filter);
-                iv_a1.setEnabled(false);
+            case "P1":
+                iv_p1.setColorFilter(filter);
+                iv_p1.setEnabled(false);
                 break;
-            case "A2":
-                iv_a2.setColorFilter(filter);
-                iv_a2.setEnabled(false);
+            case "P2":
+                iv_p2.setColorFilter(filter);
+                iv_p2.setEnabled(false);
                 break;
-            case "A3":
-                iv_a3.setColorFilter(filter);
-                iv_a3.setEnabled(false);
+            case "P3":
+                iv_p3.setColorFilter(filter);
+                iv_p3.setEnabled(false);
                 break;
-            case "A4":
-                iv_a4.setColorFilter(filter);
-                iv_a4.setEnabled(false);
+            case "P4":
+                iv_p4.setColorFilter(filter);
+                iv_p4.setEnabled(false);
                 break;
             default:
                 break;
@@ -148,9 +145,10 @@ public class m_7c_Metalslug extends AppCompatActivity {
         };
 
         // Realizamos una llamada al controlador con cada una de las imágenes
-        iv_a1.setOnClickListener(controladorTag);
-        iv_a2.setOnClickListener(controladorTag);
-        iv_a3.setOnClickListener(controladorTag);
-        iv_a4.setOnClickListener(controladorTag);
+        iv_p1.setOnClickListener(controladorTag);
+        iv_p2.setOnClickListener(controladorTag);
+        iv_p3.setOnClickListener(controladorTag);
+        iv_p4.setOnClickListener(controladorTag);
+
     }
 }
